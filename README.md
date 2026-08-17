@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo](logo.png)
+![logo](logo_cairnjs.png)
   
 </div>
 
@@ -21,24 +21,6 @@ A minimal Node.js/TypeScript backend framework. A route's shape, validation, and
 ```sh
 npm install @cairnjs/core
 ```
-
-## Plugins
-
-- [`@cairnjs/plugin-example`](packages/plugin-example)  logger. `app.use(loggerPlugin())`.
-- [`@cairnjs/plugin-auth`](packages/plugin-auth)  route-scoped auth guard. `before: [authGuard({ key })]`.
-
-## Examples
-
-- [`examples/basic-api`](examples/basic-api)  minimal CRUD-ish app with the logger plugin.
-- [`examples/url-shortener`](examples/url-shortener)  a URL shortener dogfooding the framework, with a friction log.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Security
-
-See [SECURITY.md](SECURITY.md).
 
 ## Quick start
 
@@ -113,6 +95,24 @@ Returns a redirect value. Return it from a handler to respond with a 302 + `Loca
 ### `app.listen(port)`
 
 Starts a `node:http` server. Returns the server.
+
+## Plugins
+
+- [`@cairnjs/plugin-example`](packages/plugin-example)  logger. `app.use(loggerPlugin())`.
+- [`@cairnjs/plugin-auth`](packages/plugin-auth)  route-scoped auth guard. `before: [authGuard({ key })]`.
+
+## Examples
+
+- [`examples/basic-api`](examples/basic-api)  minimal CRUD-ish app with the logger plugin.
+- [`examples/url-shortener`](examples/url-shortener)  a URL shortener dogfooding the framework, with a friction log.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Security
+
+See [SECURITY.md](SECURITY.md).
 
 ## License
 
