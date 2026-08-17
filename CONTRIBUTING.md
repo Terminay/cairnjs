@@ -26,7 +26,7 @@ Tests use `node:test` + `node:assert`. No test framework.
 
 ## Opening a PR
 
-Use the PR template. Keep the diff focused — one logical change per PR. If you're fixing a bug, include a test that reproduces it.
+Use the PR template. Keep the diff focused  one logical change per PR. If you're fixing a bug, include a test that reproduces it.
 
 ## Reporting bugs
 

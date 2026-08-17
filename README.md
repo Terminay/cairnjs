@@ -4,7 +4,7 @@
 [![build](https://img.shields.io/github/actions/workflow/status/cairnjs/cairn/publish.yml)](https://github.com/cairnjs/cairn/actions)
 [![license](https://img.shields.io/github/license/cairnjs/cairn)](https://github.com/cairnjs/cairn/blob/main/LICENSE)
 
-A minimal Node.js/TypeScript backend framework. A route's shape, validation, and handler live in one call: give it a schema, get a typed context and a runtime check. Handlers are async functions that take a typed context and return a plain value, which becomes the JSON response. No `req`/`res`/`next`, no external HTTP library, no validation library — just `node:http` and a small hand-rolled validator.
+A minimal Node.js/TypeScript backend framework. A route's shape, validation, and handler live in one call: give it a schema, get a typed context and a runtime check. Handlers are async functions that take a typed context and return a plain value, which becomes the JSON response. No `req`/`res`/`next`, no external HTTP library, no validation library  just `node:http` and a small hand-rolled validator.
 
 ## Install
 
@@ -88,13 +88,13 @@ Starts a `node:http` server. Returns the server.
 
 ## Plugins
 
-- [`@cairnjs/plugin-example`](packages/plugin-example) — logger. `app.use(loggerPlugin())`.
-- [`@cairnjs/plugin-auth`](packages/plugin-auth) — route-scoped auth guard. `before: [authGuard({ key })]`.
+- [`@cairnjs/plugin-example`](packages/plugin-example)  logger. `app.use(loggerPlugin())`.
+- [`@cairnjs/plugin-auth`](packages/plugin-auth)  route-scoped auth guard. `before: [authGuard({ key })]`.
 
 ## Examples
 
-- [`examples/basic-api`](examples/basic-api) — minimal CRUD-ish app with the logger plugin.
-- [`examples/url-shortener`](examples/url-shortener) — a URL shortener dogfooding the framework, with a friction log.
+- [`examples/basic-api`](examples/basic-api)  minimal CRUD-ish app with the logger plugin.
+- [`examples/url-shortener`](examples/url-shortener)  a URL shortener dogfooding the framework, with a friction log.
 
 ## Contributing
 

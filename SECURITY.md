@@ -12,7 +12,7 @@ Please include:
 
 - A description of the vulnerability
 - Steps to reproduce, or a minimal proof of concept
-- Impact — what an attacker could do
+- Impact what an attacker could do
 
 ## Response
 
