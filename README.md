@@ -1,8 +1,8 @@
 # cairn
 
 [![npm version](https://img.shields.io/npm/v/@cairnjs/core)](https://www.npmjs.com/package/@cairnjs/core)
-[![build](https://img.shields.io/github/actions/workflow/status/cairnjs/cairn/publish.yml)](https://github.com/cairnjs/cairn/actions)
-[![license](https://img.shields.io/github/license/cairnjs/cairn)](https://github.com/cairnjs/cairn/blob/main/LICENSE)
+[![build](https://img.shields.io/github/actions/workflow/status/Terminay/cairnjs/publish.yml)](https://github.com/Terminay/cairnjs/actions)
+[![license](https://img.shields.io/github/license/Terminay/cairnjs)](https://github.com/Terminay/cairnjs/blob/main/LICENSE)
 
 A minimal Node.js/TypeScript backend framework. A route's shape, validation, and handler live in one call: give it a schema, get a typed context and a runtime check. Handlers are async functions that take a typed context and return a plain value, which becomes the JSON response. No `req`/`res`/`next`, no external HTTP library, no validation library  just `node:http` and a small hand-rolled validator.
 
