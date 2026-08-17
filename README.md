@@ -1,8 +1,18 @@
-# cairn
+<div align="center">
 
-[![npm version](https://img.shields.io/npm/v/@cairnjs/core)](https://www.npmjs.com/package/@cairnjs/core)
-[![build](https://img.shields.io/github/actions/workflow/status/Terminay/cairnjs/publish.yml)](https://github.com/Terminay/cairnjs/actions)
-[![license](https://img.shields.io/github/license/Terminay/cairnjs)](https://github.com/Terminay/cairnjs/blob/main/LICENSE)
+![logo](logo.png)
+  
+</div>
+
+<h1 align="center"> Cairn.js </h1>
+
+<div align="center">
+  
+[![npm version](https://img.shields.io/npm/v/@cairnjs/core?style=for-the-badge)](https://www.npmjs.com/package/@cairnjs/core)
+[![build](https://img.shields.io/github/actions/workflow/status/Terminay/cairnjs/publish.yml?style=for-the-badge)](https://github.com/Terminay/cairnjs/actions)
+[![license](https://img.shields.io/github/license/Terminay/cairnjs?style=for-the-badge)](https://github.com/Terminay/cairnjs/blob/main/LICENSE)
+
+</div>
 
 A minimal Node.js/TypeScript backend framework. A route's shape, validation, and handler live in one call: give it a schema, get a typed context and a runtime check. Handlers are async functions that take a typed context and return a plain value, which becomes the JSON response. No `req`/`res`/`next`, no external HTTP library, no validation library  just `node:http` and a small hand-rolled validator.
 
@@ -11,6 +21,24 @@ A minimal Node.js/TypeScript backend framework. A route's shape, validation, and
 ```sh
 npm install @cairnjs/core
 ```
+
+## Plugins
+
+- [`@cairnjs/plugin-example`](packages/plugin-example)  logger. `app.use(loggerPlugin())`.
+- [`@cairnjs/plugin-auth`](packages/plugin-auth)  route-scoped auth guard. `before: [authGuard({ key })]`.
+
+## Examples
+
+- [`examples/basic-api`](examples/basic-api)  minimal CRUD-ish app with the logger plugin.
+- [`examples/url-shortener`](examples/url-shortener)  a URL shortener dogfooding the framework, with a friction log.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Security
+
+See [SECURITY.md](SECURITY.md).
 
 ## Quick start
 
@@ -86,28 +114,6 @@ Returns a redirect value. Return it from a handler to respond with a 302 + `Loca
 
 Starts a `node:http` server. Returns the server.
 
-## Plugins
-
-- [`@cairnjs/plugin-example`](packages/plugin-example)  logger. `app.use(loggerPlugin())`.
-- [`@cairnjs/plugin-auth`](packages/plugin-auth)  route-scoped auth guard. `before: [authGuard({ key })]`.
-
-## Examples
-
-- [`examples/basic-api`](examples/basic-api)  minimal CRUD-ish app with the logger plugin.
-- [`examples/url-shortener`](examples/url-shortener)  a URL shortener dogfooding the framework, with a friction log.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Security
-
-See [SECURITY.md](SECURITY.md).
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## Status
-
-Early/experimental. The API will change.
