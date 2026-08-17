@@ -1,0 +1,31 @@
+{
+  "name": "@cairnjs/core",
+  "version": "0.1.0",
+  "description": "Minimal Node.js/TypeScript backend framework. Route shape, validation, and handler in one call.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["http", "framework", "typescript", "validation", "router"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cairnjs/cairn.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

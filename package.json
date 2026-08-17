@@ -1,0 +1,17 @@
+{
+  "name": "cairn-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "examples/*"],
+  "scripts": {
+    "build": "npm run build -w @cairnjs/core && npm run build -w @cairnjs/plugin-example && npm run build -w @cairnjs/plugin-auth",
+    "dev": "npm run build && npm run dev -w @cairnjs/basic-api",
+    "start": "npm run build && npm run start -w @cairnjs/basic-api",
+    "test": "npm run build && node --import tsx --test examples/basic-api/test/app.test.ts examples/url-shortener/test/app.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
