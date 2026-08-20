@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo_cairnjs.png" width=250 height=250>
+<img src="logo_cairnjs.png" width=200 height=200>
   
 </div>
 
